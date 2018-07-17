@@ -1,10 +1,11 @@
 # wechat4u.js
 
 ```bash
+> shadow-cljs release app
+
 > node
-> require('./target_cljs/example.main').main()
-App loaded!
-null
+> require('./target_cljs/release/example.main').main()
+{"origin":"119.57.75.254"}
 >
 
 ```
