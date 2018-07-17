@@ -175,7 +175,7 @@ bot.on('message', msg => {
    */
   console.log(`----------${msg.getDisplayTime()}----------`)
     //require('./target_cljs/release/example.main').main()
-  require('./target_cljs/release/example.main').addblog("SteveChan" ,msg)
+  require('./target_cljs/release/example.main').add_robot_blog("SteveChan" ,msg)
   console.log(`==============`)
   /**
    * 获取消息发送者的显示名
