@@ -44,9 +44,8 @@
     "nock": "^8.0.0",
     "qrcode-terminal": "^0.11.0",
     "replay": "^2.0.6",
-    "request": "^2.79.0",
-    "@cljs-oss/module-deps": "^1.1.1",
-    "highland": "^2.11.0",
-    "request": "^2.83.0"
+    "shadow-cljs": "^2.0.2",
+    "request": "^2.83.0",
+    "highland": "^2.11.0"
   }
 }
