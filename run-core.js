@@ -174,7 +174,8 @@ bot.on('message', msg => {
    * 获取消息时间
    */
   console.log(`----------${msg.getDisplayTime()}----------`)
-  require('./target_cljs/release/example.main').main()
+    //require('./target_cljs/release/example.main').main()
+  require('./target_cljs/release/example.main').addblog("SteveChan" ,msg)
   console.log(`==============`)
   /**
    * 获取消息发送者的显示名
