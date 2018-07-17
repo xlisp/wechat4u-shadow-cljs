@@ -23,3 +23,9 @@
      :form formdata})
    (fn [error response body]
      (callback (.-statusCode response) error body))))
+
+(defn ^:export add-robot-blog
+  [who_share url]
+  (http-post {:url "http://67.216.200.53/add-robot-blog"
+              :formdata {:who_share who_share :url url}
+              :callback (fn [status error body] (prn status)) }))
