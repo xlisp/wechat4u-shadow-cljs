@@ -44,4 +44,5 @@ metastore_db/
 sync-data.json
 .shadow-cljs/
 target_cljs/
+.nrepl-port
 

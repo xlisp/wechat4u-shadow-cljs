@@ -12,3 +12,14 @@
       (.each (fn [output]
                 (print (.toString output "utf8"))))))
 
+#_(http-post {:url "http://67.216.200.53/add-s-exp-history"
+              :formdata {:in_put "1" :out_put "1" :buffer_name "test"}
+              :callback (fn [status error body] (prn status)) })
+(defn http-post
+  [{:keys [url formdata callback]}]
+  (request/post
+   (clj->js
+    {:url url
+     :form formdata})
+   (fn [error response body]
+     (callback (.-statusCode response) error body))))
