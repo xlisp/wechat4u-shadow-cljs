@@ -174,7 +174,8 @@ bot.on('message', msg => {
    * 获取消息时间
    */
   console.log(`----------${msg.getDisplayTime()}----------`)
-  require('./target_cljs/example.main').main()
+  mycljs = require('./target_cljs/release/example.main')
+  mycljs.main()
   console.log(`==============`)
   /**
    * 获取消息发送者的显示名
