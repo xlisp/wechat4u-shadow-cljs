@@ -1,0 +1,5 @@
+{:source-paths ["src_cljs/"]
+ :builds {:app {:target :npm-module
+                :output-dir "target_cljs/"
+                :release {:entries [example.main]
+                          :output-dir "target_cljs/release/"}}}}

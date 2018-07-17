@@ -42,4 +42,6 @@ node_modules
 *.gif
 metastore_db/
 sync-data.json
+.shadow-cljs/
+target_cljs/
 
